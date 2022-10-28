@@ -2,17 +2,17 @@ package j137_Our_Generics_Class;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team<T> {
 	
 	private String teamName;
 	int played = 0;
 	int won = 0;
 	int lost = 0;
 	int tied = 0;
-	ArrayList<Player> membersList = new ArrayList<Player>();
+	ArrayList<T> membersList = new ArrayList<T>();
 	
 	//add mebers
-	public boolean addPlayer(Player player) {
+	public boolean addPlayer(T player) {
 		if(membersList.contains(player)) {
 //			System.out.println("Player already exist");
 			return false;

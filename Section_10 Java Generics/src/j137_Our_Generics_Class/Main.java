@@ -6,12 +6,16 @@ public class Main {
 		SoccerPlayer Soccer1 = new SoccerPlayer("Soccer1");
 		BaseBallPlayer BaseBall1 = new BaseBallPlayer("BaseBall1");
 		
-		Team dgshTeam = new Team("DGSH");
-		dgshTeam.addPlayer(BaseBall1);
-		dgshTeam.addPlayer(Soccer1);
-		dgshTeam.addPlayer(football1);
+		Team<FootBallPlayer> team1 = new Team<>("Team1");
+		team1.addPlayer(football1);
 		
-		System.out.println(dgshTeam.numPlayes());
 		
+		Team<BaseBallPlayer> team2 = new Team<>("Team2");
+		team2.addPlayer(BaseBall1);
+		
+		Team<SoccerPlayer> team3 = new Team<SoccerPlayer>("Team3");
+		team3.addPlayer(Soccer1);
+		
+		System.out.println();
 	}
 }
