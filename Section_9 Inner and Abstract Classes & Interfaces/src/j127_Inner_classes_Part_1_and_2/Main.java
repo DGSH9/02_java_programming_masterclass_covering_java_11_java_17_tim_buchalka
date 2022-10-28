@@ -1,4 +1,4 @@
-package j127_Inner_classes_Part_1;
+package j127_Inner_classes_Part_1_and_2;
 
 public class Main {
 	public static void main(String[] args) {
